@@ -5,14 +5,14 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/spalsh_screen"
+    android:background="@drawable/city"
     tools:context=".SplashActivity">
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="211dp"
         android:layout_height="140dp"
-        android:layout_marginTop="232dp"
+        android:layout_marginTop="208dp"
         android:src="@drawable/white_cloud"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,30 +24,43 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="55dp"
         android:fontFamily="sans-serif-black"
-        android:text="Weather Conditions maybe your decide Mode"
+        android:text="Weather Climate"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="30sp"
+        android:textSize="40sp"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
         app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toBottomOf="@id/imageView" />
 
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="57dp"
+        android:fontFamily="arial"
+        android:text="Weather forecast for cities"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.743"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView7" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="185dp"
-        android:layout_marginEnd="57dp"
 
+        android:layout_marginStart="16dp"
         android:fontFamily="serif-monospace"
-        android:text="Like weather life also sufer \nwith goog and bad day!"
+        android:text="Like weather life also sufer \nfrom good and bad day!"
         android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView7" />
-
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        app:layout_constraintVertical_bias="0.988" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
